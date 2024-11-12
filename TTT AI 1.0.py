@@ -1,3 +1,7 @@
+# Ai using a minimaxing-inspireed algorithm to always win or draw at Tic-Tac-Toe/Naughts-and-Crosses.
+# Requires some help from some static lines of code that help it with its starting moves, blocking opponent wins, and finding winning moves. 
+
+
 import pygame, os
 
 WIDTH, HEIGHT = 900, 500
