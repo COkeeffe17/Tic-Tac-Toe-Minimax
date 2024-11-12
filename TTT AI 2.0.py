@@ -1,3 +1,6 @@
+# Improved version of the previous AI, this one relies solely on the minimaxing algorithm rather than relying on static assistance.
+# This time I kept the move-deciding and scoring/recursion algorithms separate; AI_turn and minimax respectively.
+
 import pygame, os
 
 WIDTH, HEIGHT = 900, 500
