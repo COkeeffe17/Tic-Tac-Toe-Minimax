@@ -45,7 +45,6 @@ handshake = pygame.transform.scale(handshake, (500, 500))
 def O_win():
     okay = True
     while okay == True:
-
         WIN.fill(WHITE)
         WIN.blit(Blue_crown, (200, 30))
         pygame.display.update()
@@ -152,7 +151,8 @@ def placement(x, y, turn, taken_spaces, X_spaces, O_spaces):
     # Dont place
     if found == True:
         return False
-    
+
+    # Place
     elif found == False:
             WIN.blit(X_icon if turn == "X" else O_icon, (image_x, image_y))
             coords = str(image_x) + "," + str(image_y)
@@ -163,7 +163,9 @@ def placement(x, y, turn, taken_spaces, X_spaces, O_spaces):
 
 
 def AI_turn(X_spaces, O_spaces, spaces, turns, player, movemade):
-    finals = []  # List to store results of each possible move
+    # List to store results of each possible move
+    finals = []  
+    
     over = check_victory(X_spaces, O_spaces, False)
 
     # Base case: Game has ended, return result
